@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="/static/3.css" rel="stylesheet" type="text/css" />
+  <script src="teksts.js"></script>
+  <script src="/js/teksts1.js"></script>
+  <script src="/js/teksts2.js"></script>
+</head>
+<body>
+<div class="first">
+  <div>
+    <select name="staduizvele" id="stadi" class="staduklase" onmouseclick="izvele()" onmouseclick="nevele()" onchange="teksts()">
+      <option value="Kviesi">Kvieši</option>
+      <option value="Kartupeli">Kartupeļi</option>
+      <option value="Burkani">Burkāni</option>
+      <option value="Bietes">Bietes</option>
+    </select>
+  </div>
+  <div class="type3">
+    <p id="Kviesi" class="radit" alt="Kviesi">10kg</p>
+    <p id="Kartupeli" class="neradit" alt="Kartupeli">12kg</p>
+    <p id="Burkani" class="neradit" alt="Burkani">7kg</p>
+    <p id="Bietes" class="neradit" alt="Bietes">5kg</p>
+  </div>
+</div>
+<div class="second">
+  <div>
+    <select name="tehnikasizvele" id="tehnika" class="tehnikasklase" onmouseclick="izvele()" onmouseclick="nevele()" onchange="teksts1()">
+      <option value="Traktori">Traktori</option>
+      <option value="Kravasauto">Kravas auto</option>
+      <option value="Piekabes">Piekabes</option>
+      <option value="Celeji">Cēlēji</option>
+    </select>
+  </div>
+  <div class="type2">
+    <p id="Traktori" class="radit" alt="Kviesi">12</p>
+    <p id="Kravasauto" class="neradit" alt="Kartupeli">3</p>
+    <p id="Piekabes" class="neradit" alt="Burkani">27</p>
+    <p id="Celeji" class="neradit" alt="Bietes">5</p>
+  </div>
+</div>  
+<div class="third">
+  <div>
+    <select name="kokuizvele" id="koki" class="kokuklase" onmouseclick="izvele()" onmouseclick="nevele()" onchange="teksts2()">
+      <option value="Ozoli">Ozoli</option>
+      <option value="Berzi">Bērzi</option>
+      <option value="Apses">Apses</option>
+      <option value="Egles">Egles</option>
+    </select>
+  </div>
+  <div class="type1">
+    <p id="Ozoli" class="radit" alt="Kviesi">27</p>
+    <p id="Berzi" class="neradit" alt="Kartupeli">38</p>
+    <p id="Apses" class="neradit" alt="Burkani">15</p>
+    <p id="Egles" class="neradit" alt="Bietes">23</p>
+  </div>
+</div> 
+<div>
+  <button><a href="/"><--</a></button>
+</div>
+</body>
+</html>

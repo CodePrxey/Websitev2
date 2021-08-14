@@ -1,0 +1,44 @@
+header {
+  text-align: center;
+  background-image: url('http://www.macmillandictionary.com/external/slideshow/full/46528_full.jpg');
+  background-size: cover;
+  color: white;
+}
+a {
+  color: white;
+}
+h1 {
+  font-size: 60px;
+}
+img {
+  margin: 40px 0px 0px 0px;
+  border: 7px transparent black;
+  border-radius: 20px;
+  width: 350px;
+}
+ul {
+  padding: 5px;
+  background: rgba(0,0,0,0.5);
+}
+li {
+  display: inline;
+  padding: 0px 10px 0px 10px;
+}
+article {
+  max-width: 500px;
+  padding: 5px;
+  margin: 0 auto;
+}
+body {
+  background: rgb(223, 222, 181)
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 36px;
+    padding: 5px;
+  }
+  li {
+    padding: 5px;
+    display: block;
+  }
+}

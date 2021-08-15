@@ -13,7 +13,7 @@ let requestBodyJson;
             
 let requestBodyString = JSON.stringify(requestBodyJson);
 
-let request = await fetch('https://replit.com/@CodePrxey/Websitev2/api/pievienot',
+let request = await fetch('https://replit.com/@CodePrxey/Con/api/pievienot',
          		{
             method:"POST",
   		headers:

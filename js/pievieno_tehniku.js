@@ -12,7 +12,7 @@ async function pievieno_tehniku()
       }                          
             
 let requestBodyString = JSON.stringify(requestBodyJson);*/
-let roomDB = await fetch('https://andrejstehnika.amikis.repl.co/api/augi')
+let roomDB = await fetch('https://con.codeprxey.repl.co/api/augi')
 let roomJson = await roomDB.json();
 let kabinetuSkaits=roomJson.dati.length;
 //let texts = kabinetuSkaits.toString();

@@ -2,7 +2,7 @@
 
 async function pievieno_tehniku()
 {
-let requestBodyJson; 
+/*let requestBodyJson; 
 //izveido json datu struktūru no html lapas input elementu vērtībām
     requestBodyJson = { 
       // "skaits": parseInt(document.querySelector('#skaits').value),            
@@ -11,9 +11,11 @@ let requestBodyJson;
       "maksa": document.querySelector('#inos3').value,                
       }                          
             
-let requestBodyString = JSON.stringify(requestBodyJson);
-
-let request = await fetch('https://con.codeprxey.repl.co/api/pievienot',
+let requestBodyString = JSON.stringify(requestBodyJson);*/
+let roomDB = await fetch('https://andrejstehnika.amikis.repl.co/api/kabineti')
+let roomJson = await roomDB.json();
+let kabinetuSkaits=roomJson.dati.length;
+/*let request = await fetch('https://con.codeprxey.repl.co/api/augi',
          		{
             method:"POST",
   		headers:
@@ -30,5 +32,6 @@ let request = await fetch('https://con.codeprxey.repl.co/api/pievienot',
                     alert("ieraksts pievienots")
                 }
             })
-location.reload();
+location.reload();*/
+
 }

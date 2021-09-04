@@ -15,7 +15,7 @@ let requestBodyString = JSON.stringify(requestBodyJson);*/
 let roomDB = await fetch('https://andrejstehnika.amikis.repl.co/api/kabineti')
 let roomJson = await roomDB.json();
 let kabinetuSkaits=roomJson.dati.length;
-let texts = kabinetuSkaits.toString();
+//let texts = kabinetuSkaits.toString();
 alert(texts)
 /*let request = await fetch('https://con.codeprxey.repl.co/api/augi',
          		{

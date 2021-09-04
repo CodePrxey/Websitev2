@@ -16,7 +16,9 @@ let roomDB = await fetch('https://savieno.codeprxey.repl.co/api/augi')
 let roomJson = await roomDB.json();
 let kabinetuSkaits=roomJson.dati.length;
 //let texts = kabinetuSkaits.toString();
+document.querySelector('#ask').value = kabinetuSkaits;
 alert(kabinetuSkaits)
+
 /*let request = await fetch('https://con.codeprxey.repl.co/api/augi',
          		{
             method:"POST",

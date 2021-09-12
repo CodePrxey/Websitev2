@@ -14,12 +14,12 @@ async function pievieno_tehniku()
 let requestBodyString = JSON.stringify(requestBodyJson);*/
     
  
-/*let roomDB = await fetch('https://savieno.codeprxey.repl.co/api/augi')
+let roomDB = await fetch('https://savieno.codeprxey.repl.co/api/augi')
 let roomJson = await roomDB.json();
-let kabinetuSkaits=roomJson.dati.length;*/
+//let kabinetuSkaits=roomJson.dati.length;
     
     
-let tabRindas=document.getElementById('daudzums');
+let tabRindas = document.getElementById('daudzums');
 let rskaits = document.getElementById('daudzums').rows.length;
 //let texts = kabinetuSkaits.toString();
 document.querySelector('#ask').value = kabinetuSkaits;

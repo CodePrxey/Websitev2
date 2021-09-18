@@ -16,14 +16,14 @@ let requestBodyString = JSON.stringify(requestBodyJson);*/
  
 let roomDB = await fetch('https://savieno.codeprxey.repl.co/api/augi')
 let roomJson = await roomDB.json();
-//let kabinetuSkaits=roomJson.dati.length;
+let ierakstuSkaits=roomJson.dati.length;
+alert(ierakstuSkaits)    
     
-    
-let tabRindas = document.getElementById('daudzums');
-let rskaits = document.getElementById('daudzums').rows.length;
+//let tabRindas = document.getElementById('daudzums');
+//let rskaits = document.getElementById('daudzums').rows.length;
 //let texts = kabinetuSkaits.toString();
-document.querySelector('#ask').value = kabinetuSkaits;
-alert(kabinetuSkaits)
+//document.querySelector('#ask').value = kabinetuSkaits;
+//alert(kabinetuSkaits)
 
 /*let request = await fetch('https://con.codeprxey.repl.co/api/augi',
          		{

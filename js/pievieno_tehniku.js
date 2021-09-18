@@ -13,7 +13,7 @@ async function pievieno_tehniku()
             
 let requestBodyString = JSON.stringify(requestBodyJson);*/
     
-let augaTips, graudSkaits = 0, darzSkaits = 0;
+let augTips, graudSkaits = 0, darzSkaits = 0;
 let roomDB = await fetch('https://savieno.codeprxey.repl.co/api/augi')
 let roomJson = await roomDB.json();
 let ierakstuSkaits=roomJson.dati.length;
@@ -21,12 +21,12 @@ let ierakstuSkaits=roomJson.dati.length;
 
     
 for(let i=0;i<ierakstuSkaits;i++){
-       augaTips=pcJson.dati[i]['augatips'];
-       if(augaTips=="darzenis")
+       augTips=roomJson.dati[i]['augatips'];
+       if(augTips=="darzenis")
                {
             darzSkaits++;
         }
-        if(augaTips=="graudaugs")
+        if(augTips=="graudaugs")
             {
             graudSkaits++;
         } 

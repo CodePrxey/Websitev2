@@ -32,11 +32,16 @@ for(let i=0;i<ierakstuSkaits;i++){
         } 
 
     }
-alert(graudSkaits);
+
 //let tabRindas = document.getElementById('daudzums');
 //let rskaits = document.getElementById('daudzums').rows.length;
 //let texts = kabinetuSkaits.toString();
-//document.querySelector('#ask').value = kabinetuSkaits;
+if (document.querySelector('#izv').value == 1) {
+    document.querySelector('#ask').value = graudSkaits;
+}
+if (document.querySelector('#izv').value == 2){
+    document.querySelector('#ask').value = darzSkaits;   
+}
 //alert(kabinetuSkaits)
 
 /*let request = await fetch('https://con.codeprxey.repl.co/api/augi',

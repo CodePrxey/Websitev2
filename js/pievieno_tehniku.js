@@ -37,10 +37,10 @@ for(let i=0;i<ierakstuSkaits;i++){
 //let rskaits = document.getElementById('daudzums').rows.length;
 //let texts = kabinetuSkaits.toString();
 if (document.querySelector('#izv').value == 1) {
-    document.querySelector('#ask').value = graudSkaits * 10;
+    document.querySelector('#ask').value = graudSkaits * 5;
 }
 if (document.querySelector('#izv').value == 2){
-    document.querySelector('#ask').value = darzSkaits * 20;   
+    document.querySelector('#ask').value = darzSkaits * 2;   
 }
 //alert(kabinetuSkaits)
 

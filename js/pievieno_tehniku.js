@@ -43,25 +43,6 @@ if (document.querySelector('#izv').value == 2){
     document.querySelector('#ask').value = darzSkaits * 2;   
 }
 
-let myObj
-let text
-let x
-const dbParam = roomJson.stringify({table:sel,limit:20});
-const xmlhttp = new XMLHttpRequest();
-xmlhttp.onload = function() {
-  myObj = roomJson.parse(this.responseText);
-  text = "<table border='1'>"
-  for (x in myObj) {
-    text += "<tr><td>" + myObj[x].name + "</td></tr>";
-  }
-  text += "</table>"    
-  document.getElementById("demo").innerHTML = text;
-}
-xmlhttp.open("POST", "json_demo_html_table.php", true);
-xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-xmlhttp.send("x=" + dbParam);
-
-
 //alert(kabinetuSkaits)
 
 /*let request = await fetch('https://con.codeprxey.repl.co/api/augi',

@@ -43,10 +43,13 @@ if (document.querySelector('#izv').value == 2){
     document.querySelector('#ask').value = darzSkaits * 2;   
 }
 
-const dbParam = roomJSON.stringify({table:sel,limit:20});
+let myObj
+let text
+let x
+const dbParam = roomJson.stringify({table:sel,limit:20});
 const xmlhttp = new XMLHttpRequest();
 xmlhttp.onload = function() {
-  myObj = roomJSON.parse(this.responseText);
+  myObj = roomJson.parse(this.responseText);
   text = "<table border='1'>"
   for (x in myObj) {
     text += "<tr><td>" + myObj[x].name + "</td></tr>";

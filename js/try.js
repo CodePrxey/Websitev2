@@ -1,6 +1,8 @@
 let myObj
 let text
 let x
+let roomDB = await fetch('https://savieno.codeprxey.repl.co/api/augi')
+let roomJson = await roomDB.json();
 async function change_myselect(sel) {
 const dbParam = roomJson.stringify({table:sel,limit:20});
 const xmlhttp = new XMLHttpRequest();

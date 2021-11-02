@@ -14,14 +14,14 @@ async function pievieno_tehniku()
 let requestBodyString = JSON.stringify(requestBodyJson);*/
     
 let augTips, graudSkaits = 0, darzSkaits = 0;
-let roomDB = await fetch('https://savieno.codeprxey.repl.co/api/augi')
-let roomJson = await roomDB.json();
-let ierakstuSkaits=roomJson.dati.length;
+let auguDB = await fetch('https://savieno.codeprxey.repl.co/api/augi')
+let auguJson = await auguDB.json();
+let ierakstuSkaits=auguJson.dati.length;
 //alert(ierakstuSkaits)    
 
     
 for(let i=0;i<ierakstuSkaits;i++){
-       augTips=roomJson.dati[i]['augatips'];
+       augTips=auguJson.dati[i]['augatips'];
        if(augTips=="darzenis")
                {
             darzSkaits++;
@@ -37,10 +37,10 @@ for(let i=0;i<ierakstuSkaits;i++){
 //let rskaits = document.getElementById('daudzums').rows.length;
 //let texts = kabinetuSkaits.toString();
 if (document.querySelector('#izv').value == 1) {
-    document.querySelector('#ask').value = graudSkaits * 5;
+    document.querySelector('#ask').value = graudSkaits;
 }
 if (document.querySelector('#izv').value == 2){
-    document.querySelector('#ask').value = darzSkaits * 2;   
+    document.querySelector('#ask').value = darzSkaits;   
 }
 
 //alert(kabinetuSkaits)

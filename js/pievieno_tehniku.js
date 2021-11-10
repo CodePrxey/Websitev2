@@ -13,7 +13,7 @@ async function pievieno_tehniku()
             
 let requestBodyString = JSON.stringify(requestBodyJson);*/
 let i
-let rinda = document.querySelector('.rinda');
+//let rinda = document.querySelector('.rinda');
 let nosaukums, daudzums, maksa    
 let augTips, graudSkaits = 0, darzSkaits = 0;
 let auguDB = await fetch('https://savieno.codeprxey.repl.co/api/augi')

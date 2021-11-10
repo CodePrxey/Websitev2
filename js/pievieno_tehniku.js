@@ -12,7 +12,8 @@ async function pievieno_tehniku()
       }                          
             
 let requestBodyString = JSON.stringify(requestBodyJson);*/
-    
+let rinda = document.querySelector('.rinda');
+let nosaukums, daudzums, maksa    
 let augTips, graudSkaits = 0, darzSkaits = 0;
 let auguDB = await fetch('https://savieno.codeprxey.repl.co/api/augi')
 let auguJson = await auguDB.json();
@@ -30,9 +31,9 @@ for(let i=0;i<ierakstuSkaits;i++){
             {
             graudSkaits++;
         } 
+}
 
-    }
-alert(darzSkaits) 
+//alert(darzSkaits) 
 //let tabRindas = document.getElementById('daudzums');
 //let rskaits = document.getElementById('daudzums').rows.length;
 //let texts = kabinetuSkaits.toString();
@@ -42,27 +43,29 @@ if (document.querySelector('#izv').value == 1) {
 if (document.querySelector('#izv').value == 2){
     document.querySelector('#ask').value = darzSkaits;   
 }
-
-/*if (document.querySelector('#1izv').value == "graudaugi") {
-    document.querySelector('#2izv').value = graudSkaits;
-}
-if (document.querySelector('#1izv').value == "darzeni") {
-    document.querySelector('#2izv').value = graudSkaits;
-}
-
-
-let kg = auguJson.dati[i]['daudzums'];
-let choice;
-let rinda = document.querySelector('.rinda');
-choice = document.querySelector('#1izv').value;
-
-switch (true){
-    case choice == "graudaugs":
-            rinda.innerHTML += `
+    
+for(let i=0;i<ierakstuSkaits;i++){
+    augTips = auguJson.dati[i]['augatips'];
+    nosaukums = auguJson.dati[i]['nosaukums'];
+    daudzums = auguJson.dati[i]['daudzums'];
+    maksa = auguJson.dati[i]['maksa'];
+    if (document.querySelector('#1izv').value == "graudaugi" && augTips = "graudaugs") {
+        rinda.innerHTML += `
             <tr>
-            <td>${kg}</td>
+            <td>${nosaukums}</td>
+            <td>${daudzums}</td>
+            <td>${maksa}</td>
             </tr>`;
-        break;
+}
+if (document.querySelector('#1izv').value == "darzeni" && augTips = "darzenis") {
+    rinda.innerHTML += `
+            <tr>
+            <td>${nosaukums}</td>
+            <td>${daudzums}</td>
+            <td>${maksa}</td>
+            </tr>`;
+}
+}
 */
 //alert(kabinetuSkaits)
 /*let request = await fetch('https://con.codeprxey.repl.co/api/augi',
@@ -84,4 +87,5 @@ switch (true){
             })
 location.reload();*/
 
+}
 }

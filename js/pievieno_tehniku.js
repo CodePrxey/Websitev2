@@ -45,6 +45,25 @@ if (document.querySelector('#izv').value == 2){
 
 //alert(kabinetuSkaits)
 
+if (document.querySelector('#1izv').value == "graudaugi") {
+    document.querySelector('#2izv').value = graudSkaits;
+}
+if (document.querySelector('#1izv').value == "darzeni") {
+    document.querySelector('#2izv').value = graudSkaits;
+}
+let kaut = auguJson.dati[i]['kabinetaNr'];
+let choice;
+let rinda = document.querySelector('.rinda');
+choice = document.querySelector('#1izv').value;
+
+switch (true){
+    case choice == "graudaugs":
+            
+            rinda.innerHTML += `
+            <tr>
+            <td>${kaut}</td>
+            </tr>`;
+        break;
 /*let request = await fetch('https://con.codeprxey.repl.co/api/augi',
          		{
             method:"POST",

@@ -42,5 +42,5 @@ for(i=0;i<ierakstuSkaits;i++){
             </tr>`;
 }
 }
-alert(skaits)
+alert(skaits);
 }

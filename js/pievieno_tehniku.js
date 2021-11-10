@@ -32,7 +32,7 @@ for(let i=0;i<ierakstuSkaits;i++){
         } 
 
     }
-alert(graudSkaits) 
+alert(darzSkaits) 
 //let tabRindas = document.getElementById('daudzums');
 //let rskaits = document.getElementById('daudzums').rows.length;
 //let texts = kabinetuSkaits.toString();

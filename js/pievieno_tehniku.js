@@ -8,7 +8,14 @@ let auguDB = await fetch('https://savieno.codeprxey.repl.co/api/augi')
 let auguJson = await auguDB.json();
 let ierakstuSkaits=auguJson.dati.length;
 //alert(ierakstuSkaits)
-
+       
+let tabRindas=document.getElementById('trindas');
+let rskaits = document.getElementById('trindas').rows.length;       
+let tr = tabRindas.getElementsByTagName("tr");
+for (let r = 0; r < rskaits; r++) {
+        tr[r].style.display = "none";
+    }
+       
 for(let i=0;i<ierakstuSkaits;i++){
        augTips=auguJson.dati[i]['augatips'];
        if(augTips=="darzenis")

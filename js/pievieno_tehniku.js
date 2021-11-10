@@ -12,7 +12,6 @@ async function pievieno_tehniku()
       }                          
             
 let requestBodyString = JSON.stringify(requestBodyJson);*/
-let i
 //let rinda = document.querySelector('.rinda');
 let nosaukums, daudzums, maksa    
 let augTips, graudSkaits = 0, darzSkaits = 0;
@@ -22,7 +21,7 @@ let ierakstuSkaits=auguJson.dati.length;
 //alert(ierakstuSkaits)    
 
 
-for(i=0;i<ierakstuSkaits;i++){
+for(let i=0;i<ierakstuSkaits;i++){
        augTips=auguJson.dati[i]['augatips'];
        if(augTips=="darzenis")
                {

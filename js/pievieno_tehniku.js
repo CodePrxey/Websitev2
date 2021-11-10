@@ -2,7 +2,7 @@
 
 async function pievieno_tehniku() {
 
-let nosaukums, daudzums, maksa;    
+let nosaukums, daudzums, maksa, skaits = 0; 
 let augTips, graudSkaits = 0, darzSkaits = 0;
 let auguDB = await fetch('https://savieno.codeprxey.repl.co/api/augi')
 let auguJson = await auguDB.json();
@@ -33,6 +33,7 @@ for(i=0;i<ierakstuSkaits;i++){
     daudzums = auguJson.dati[i]['daudzums'];
     maksa = auguJson.dati[i]['maksa'];
     if (augTips == "graudaugs") {
+        skaits++;
         rinda.innerHTML += `
             <tr>
             <td>${nosaukums}</td>
@@ -41,5 +42,5 @@ for(i=0;i<ierakstuSkaits;i++){
             </tr>`;
 }
 }
-
+alert(skaits)
 }

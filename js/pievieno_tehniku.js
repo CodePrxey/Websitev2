@@ -45,7 +45,7 @@ if (document.querySelector('#izv').value == 2){
     document.querySelector('#ask').value = darzSkaits;   
 }
     
-for(i=0;i<ierakstuSkaits;i++){
+/*for(i=0;i<ierakstuSkaits;i++){
     augTips = auguJson.dati[i]['augatips'];
     nosaukums = auguJson.dati[i]['nosaukums'];
     daudzums = auguJson.dati[i]['daudzums'];

@@ -43,7 +43,7 @@ if (document.querySelector('#izv').value == 2){
     document.querySelector('#ask').value = darzSkaits;   
 }
 
-if (document.querySelector('#1izv').value == "graudaugi") {
+/*if (document.querySelector('#1izv').value == "graudaugi") {
     document.querySelector('#2izv').value = graudSkaits;
 }
 if (document.querySelector('#1izv').value == "darzeni") {
@@ -63,7 +63,7 @@ switch (true){
             <td>${kg}</td>
             </tr>`;
         break;
-
+*/
 //alert(kabinetuSkaits)
 /*let request = await fetch('https://con.codeprxey.repl.co/api/augi',
          		{

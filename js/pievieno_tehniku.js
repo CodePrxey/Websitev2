@@ -2,6 +2,7 @@
 
 async function pievieno_tehniku() {
 
+let liet_izv;
 let nosaukums, daudzums, maksa, skaits = 0; 
 let augTips, graudSkaits = 0, darzSkaits = 0;
 let auguDB = await fetch('https://savieno.codeprxey.repl.co/api/augi')
@@ -27,12 +28,14 @@ for(let i=0;i<ierakstuSkaits;i++){
             graudSkaits++;
         } 
 }
-if (document.querySelector('#izv').value == 1) {
+liet_izv = document.querySelector('#izv').value;
+if (liet_izv == "graudaugs") {
     document.querySelector('#ask').value = graudSkaits;
 }
-if (document.querySelector('#izv').value == 2){
+if (liet_izv == "darzenis"){
     document.querySelector('#ask').value = darzSkaits;   
 }
+       
 let rinda = document.querySelector('.rinda');
 for(i=0;i<ierakstuSkaits;i++){
     augTips = auguJson.dati[i]['augatips'];

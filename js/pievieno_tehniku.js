@@ -17,7 +17,7 @@ let augTips, graudSkaits = 0, darzSkaits = 0;
 let auguDB = await fetch('https://savieno.codeprxey.repl.co/api/augi')
 let auguJson = await auguDB.json();
 let ierakstuSkaits=auguJson.dati.length;
-alert(ierakstuSkaits)    
+//alert(ierakstuSkaits)    
 
     
 for(let i=0;i<ierakstuSkaits;i++){
@@ -32,7 +32,7 @@ for(let i=0;i<ierakstuSkaits;i++){
         } 
 
     }
-
+alert(graudSkaits) 
 //let tabRindas = document.getElementById('daudzums');
 //let rskaits = document.getElementById('daudzums').rows.length;
 //let texts = kabinetuSkaits.toString();

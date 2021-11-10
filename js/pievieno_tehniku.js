@@ -9,4 +9,21 @@ let auguJson = await auguDB.json();
 let ierakstuSkaits=auguJson.dati.length;
 alert(ierakstuSkaits)
 
+for(let i=0;i<ierakstuSkaits;i++){
+       augTips=auguJson.dati[i]['augatips'];
+       if(augTips=="darzenis")
+               {
+            darzSkaits++;
+        }
+        if(augTips=="graudaugs")
+            {
+            graudSkaits++;
+        } 
+}
+if (document.querySelector('#izv').value == 1) {
+    document.querySelector('#ask').value = graudSkaits;
+}
+if (document.querySelector('#izv').value == 2){
+    document.querySelector('#ask').value = darzSkaits;   
+}
 }

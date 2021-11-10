@@ -18,10 +18,10 @@ let augTips, graudSkaits = 0, darzSkaits = 0;
 let auguDB = await fetch('https://savieno.codeprxey.repl.co/api/augi')
 let auguJson = await auguDB.json();
 let ierakstuSkaits=auguJson.dati.length;
-//alert(ierakstuSkaits)    
+alert(ierakstuSkaits)    
 
 
-for(let i=0;i<ierakstuSkaits;i++){
+/*for(let i=0;i<ierakstuSkaits;i++){
        augTips=auguJson.dati[i]['augatips'];
        if(augTips=="darzenis")
                {
@@ -86,6 +86,7 @@ if (document.querySelector('#1izv').value == "darzeni" && augTips = "darzenis") 
                 }
             })
 location.reload();*/
+*/
 
 }
 }

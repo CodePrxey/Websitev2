@@ -26,7 +26,7 @@ if (document.querySelector('#izv').value == 1) {
 if (document.querySelector('#izv').value == 2){
     document.querySelector('#ask').value = darzSkaits;   
 }
-
+let rinda = document.querySelector('.rinda');
 for(i=0;i<ierakstuSkaits;i++){
     augTips = auguJson.dati[i]['augatips'];
     nosaukums = auguJson.dati[i]['nosaukums'];

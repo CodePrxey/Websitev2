@@ -42,7 +42,7 @@ for(i=0;i<ierakstuSkaits;i++){
     nosaukums = auguJson.dati[i]['nosaukums'];
     daudzums = auguJson.dati[i]['daudzums'];
     maksa = auguJson.dati[i]['maksa'];
-    if (augTips == "graudaugs") {
+    if (augTips == liet_izv) {
         skaits++;
         rinda.innerHTML += `
             <tr>

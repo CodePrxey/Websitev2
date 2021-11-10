@@ -17,7 +17,7 @@ let augTips, graudSkaits = 0, darzSkaits = 0;
 let auguDB = await fetch('https://savieno.codeprxey.repl.co/api/augi')
 let auguJson = await auguDB.json();
 let ierakstuSkaits=auguJson.dati.length;
-//alert(ierakstuSkaits)    
+alert(ierakstuSkaits)    
 
     
 for(let i=0;i<ierakstuSkaits;i++){
@@ -42,6 +42,27 @@ if (document.querySelector('#izv').value == 1) {
 if (document.querySelector('#izv').value == 2){
     document.querySelector('#ask').value = darzSkaits;   
 }
+
+if (document.querySelector('#1izv').value == "graudaugi") {
+    document.querySelector('#2izv').value = graudSkaits;
+}
+if (document.querySelector('#1izv').value == "darzeni") {
+    document.querySelector('#2izv').value = graudSkaits;
+}
+
+
+let kg = auguJson.dati[i]['daudzums'];
+let choice;
+let rinda = document.querySelector('.rinda');
+choice = document.querySelector('#1izv').value;
+
+switch (true){
+    case choice == "graudaugs":
+            rinda.innerHTML += `
+            <tr>
+            <td>${kg}</td>
+            </tr>`;
+        break;
 
 //alert(kabinetuSkaits)
 /*let request = await fetch('https://con.codeprxey.repl.co/api/augi',
